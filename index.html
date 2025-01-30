@@ -26,6 +26,7 @@
             primary: '#FFDC26',
             secondary: '#FFF9F4',
             dark: '#111111',
+            light: '#F9DF8A',
           },
           fontFamily: {
             adlam: ['ADLaM Display', 'serif'],
@@ -74,13 +75,15 @@
 
   <main>
     <!-- here section -->
-    <div class=" container px-5 bg-bottom md:bg-right-top h-[400px] md:h-[780px] m-auto bg-contain bg-no-repeat"
+    <div
+      class=" container px-5 bg-bottom lg:bg-right-top h-[400px] md:h-[600px] lg:h-[780px] m-auto bg-contain bg-no-repeat"
       style="background-image: url(/images/cat-big.png);">
       <div>
         <div class="max-w-[650px] text-left pt-5 md:pt-20">
-          <h1 class="mb-5 text-3xl md:text-5xl font-adlam font-bold text-dark leading-normal">Pamper Your Pet, Because
+          <h1 class="mb-5 text-3xl md:text-5xl font-adlam font-bold text-dark md:leading-normal">Pamper Your
+            Pet, <br>Because
             They
-            Deserve the Bes
+            Deserve <br> the Bes
           </h1>
           <p class="mb-5 text-[16px] md:text-[20px]">
             Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails
@@ -92,9 +95,54 @@
       </div>
     </div>
 
-    <div>
-      <h3></h3>
-    </div>
+    <!-- category section -->
+    <div class=" container m-auto px-5 mt-10 lg:mt-0">
+            <h2 class="text-2xl md:text-4xl font-adlam text-dark mb-5">Browse By Categories</h2>
+            <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+
+              <!-- dog -->
+              <div class="bg-light text-center space-y-2 px-12 py-6 rounded-lg">
+                <img src="images/dog-cartoon.png" class="m-auto p-5 bg-white rounded-full" alt="dog">
+                <h4 class="text-adlam text-dark text-xl font-bold">Dog</h4>
+                <p>3 Items</p>
+              </div>
+
+              <!-- fish -->
+              <div class="bg-light text-center space-y-2 px-12 py-6 rounded-lg">
+                <img src="images/fish-cartoon.png" class="m-auto p-5 bg-white rounded-full" alt="dog">
+                <h4 class="text-adlam text-dark text-xl font-bold">Fish</h4>
+                <p>3 Items</p>
+              </div>
+
+              <!-- cat -->
+              <div class="bg-light text-center space-y-2 px-12 py-6 rounded-lg">
+                <img src="images/cat-cartoon.png" class="m-auto p-5 bg-white rounded-full" alt="dog">
+                <h4 class="text-adlam text-dark text-xl font-bold">Cat</h4>
+                <p>3 Items</p>
+              </div>
+
+              <!-- birds -->
+              <div class="bg-light text-center space-y-2 px-12 py-6 rounded-lg">
+                <img src="images/bird-cartoon.png" class="m-auto p-5 bg-white rounded-full" alt="dog">
+                <h4 class="text-adlam text-dark text-xl font-bold">Birds</h4>
+                <p>3 Items</p>
+              </div>
+
+              <!-- small pet -->
+              <div class="bg-light text-center space-y-2 px-12 py-6 rounded-lg">
+                <img src="images/mouse-cartoon.png" class="m-auto p-5 bg-white rounded-full" alt="dog">
+                <h4 class="text-adlam text-dark text-xl font-bold">Small Pet</h4>
+                <p>3 Items</p>
+              </div>
+
+              <!-- rabbit -->
+              <div class="bg-light text-center space-y-2 px-12 py-6 rounded-lg">
+                <img src="images/rabbit-cartoon.png" class="m-auto p-5 bg-white rounded-full" alt="dog">
+                <h4 class="text-adlam text-dark text-xl font-bold">Rabbit</h4>
+                <p>3 Items</p>
+              </div>
+            </div>
+        </div>
   </main>
 
   <footer>
