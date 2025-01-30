@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- tailwindcss CDN -->
+  <!-- tailwindcss & daisyui CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- google fonts -->
@@ -24,6 +25,7 @@
           colors: {
             primary: '#FFDC26',
             secondary: '#FFF9F4',
+            dark: '#111111',
           },
           fontFamily: {
             adlam: ['ADLaM Display', 'serif'],
@@ -38,13 +40,17 @@
 
 </head>
 
-<body class="font-sora">
+<body class="font-sora text-dark">
   <header class="bg-secondary">
-    <div class="container m-auto md:flex justify-between items-center py-3">
-      <div class="flex items-center gap-2 pl-5 md:pl-0 md:gap-3 text-2xl">
+    <div class="container m-auto md:flex justify-between items-center py-3 px-3 border-b md:border-0 border-black">
+
+      <!-- left side -->
+      <div class="flex items-center gap-2 md:gap-3 text-2xl">
         <img src="images/logo-header.png" alt="logo">
         <h3 class="hidden md:block">Browse<span class="text-primary">4</span>Pets</h3>
       </div>
+
+      <!-- middle -->
       <nav>
         <ul class="flex gap-2 lg:gap-8">
           <li><a class="hidden md:block" href="#">Fina a pet</a></li>
@@ -52,11 +58,13 @@
           <li><a class="hidden md:block" href="#">Contact us</a></li>
         </ul>
       </nav>
-      <div class="flex gap-3 items-center hidden md:block">
-        <i class="fa-regular fa-bell"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <button class="border-2 border-primary px-5 rounded-md py-1">login</button>
-        <button class="bg-primary px-5 rounded-md py-[6px]">Register</button>
+
+      <!-- right side -->
+      <div class="flex gap-3 items-center">
+        <i class="fa-regular fa-bell hidden md:block"></i>
+        <i class="fa-solid fa-magnifying-glass hidden md:block"></i>
+        <button class="border-2 border-primary px-5 rounded-md py-1 hidden md:block">login</button>
+        <button class="bg-primary px-5 rounded-md py-[6px] hidden md:block">Register</button>
       </div>
       <div class="block text-2xl md:hidden absolute top-5 right-5">
         <i class="fa-solid fa-bars"></i>
@@ -65,7 +73,28 @@
   </header>
 
   <main>
+    <!-- here section -->
+    <div class=" container px-5 bg-bottom md:bg-right-top h-[400px] md:h-[780px] m-auto bg-contain bg-no-repeat"
+      style="background-image: url(/images/cat-big.png);">
+      <div>
+        <div class="max-w-[650px] text-left pt-5 md:pt-20">
+          <h1 class="mb-5 text-3xl md:text-5xl font-adlam font-bold text-dark leading-normal">Pamper Your Pet, Because
+            They
+            Deserve the Bes
+          </h1>
+          <p class="mb-5 text-[16px] md:text-[20px]">
+            Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails
+            wag with
+            joy!
+          </p>
+          <button class="bg-primary px-5 rounded-md py-[6px]"">Find a pet</button>
+        </div>
+      </div>
+    </div>
 
+    <div>
+      <h3></h3>
+    </div>
   </main>
 
   <footer>
